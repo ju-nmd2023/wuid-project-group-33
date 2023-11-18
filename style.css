@@ -1,0 +1,39 @@
+/* Body parts*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url("imgs/doodles.png") center/cover ;
+ 
+}
+
+Header{
+    height: 150px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+
+/* Elements */
+
+h3{
+    font-family: 
+}
+
+
+/* img classes */
+
+.logo-shirt{
+    float: left;
+    width: 75px;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.cart-style{
+    float: right;
+    width: 55px;
+    margin-top: 30px;
+    margin-right: 40px;
+}
