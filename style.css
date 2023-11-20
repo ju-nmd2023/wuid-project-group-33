@@ -1,39 +1,130 @@
+/* Font faces*/
+@font-face {
+    font-family: roboto-regular;
+    src: url("fonts/roboto-regular.TTF");
+}
+
 /* Body parts*/
 
 body{
     margin: 0;
     padding: 0;
     background: url("imgs/doodles.png") center/cover ;
+    height: 1900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
  
 }
 
-Header{
+header{
     height: 150px;
+    width: 100%;
     background-color: white;
     padding: 20px;
     text-align: center;
     border-bottom: 5px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 120px;
+}
+
+footer {
+    height: 150px;
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    border-top: 5px solid black;
+    width: 100%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    max-width: 300px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.footer-container a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.footer-icon-container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.product-container{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-bottom: 1400px;
+    padding: 20px;
+
+}
+
+.section-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+
+.section-header a {
+    margin-right: 100%;
 }
 
 /* Elements */
 
 h3{
-    font-family: 
+    font-family: roboto-regular;
+    color: black;
 }
 
+a{
+    text-decoration: none;
+}
 
 /* img classes */
 
 .logo-shirt{
     float: left;
     width: 75px;
-    margin-top: 35px;
+    height: 75px;
+    margin-top: 15px;
     margin-left: 40px;
 }
 
 .cart-style{
     float: right;
     width: 55px;
+    height: 55px;
     margin-top: 30px;
     margin-right: 40px;
+}
+
+.footer-icon{
+    float: right;
+    width: 60px;
+    height: auto;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    margin-top: -85px;
+
+}
+
+/* Fixes */
+
+.footer-fix{
+ 
 }
