@@ -211,6 +211,73 @@ a {
   opacity: 1;
 }
 
+/* Product page content */
+
+.gulag-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.display-container {
+  background-color: white;
+  width: 80%;
+  height: 620px;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-left: 30%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.display-container-2 {
+  background-color: white;
+  width: 50%;
+  height: 620px;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-right: 30%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.product-display {
+  width: 80%;
+  margin-left: 7%;
+}
+
+.popular-container {
+  background-color: white;
+  width: 75%;
+  height: 360px;
+  margin: 100px;
+  margin-bottom: 100px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5%;
+  box-sizing: border-box;
+}
+
+.container-container-gulag {
+  margin-bottom: 100px;
+  margin-top: -800px;
+  width: 100%;
+}
+
 /* Fixes */
 
 .home-fix {
