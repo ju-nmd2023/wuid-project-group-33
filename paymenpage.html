@@ -20,9 +20,33 @@
         ><img class="cart-style" src="imgs/cart.png" alt="Shopping cart"
       /></a>
     </header>
-
     <section>
-      <div class="product-container"></div>
+      <div class="product-container">
+        <h1 class="collection-title">Enter Your Card Details Here -></h1>
+        <div class="contact-form">
+          <form
+            name="submit-to-google-sheet"
+            onsubmit="return redirectToPage()"
+          >
+            <input type="name" name="Name" placeholder="Name On Card" />
+            <input type="nummber" name="nummber" placeholder="Cardnumber" />
+            <input
+              type="Date of Expiration"
+              name="Date of Expiration"
+              placeholder="Date of Expiration"
+            />
+            <input type="CCV" name="CCV" placeholder="CCV" />
+            <br />
+            <button
+              type="button"
+              class="btn3"
+              onclick="window.location.href='adresspage.html'"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -43,5 +67,6 @@
         <img class="footer-icon" src="imgs/facebook.png" alt="" />
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

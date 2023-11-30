@@ -20,11 +20,26 @@
         ><img class="cart-style" src="imgs/cart.png" alt="Shopping cart"
       /></a>
     </header>
-
-    <section>
-      <div class="product-container"></div>
+    <section class="shopping-cart">
+      <div class="cart-items" id="cartItemsContainer"></div>
+      <div class="cart-summary">
+        <h3>Your Cart Summary</h3>
+        <div class="cart-content">
+          <div>
+            <img
+              class="cart-shirt"
+              src="designs/gulag.webp"
+              alt="Gulag t-shirt"
+            />
+            <p>Total Items: <span id="totalItems">1</span></p>
+            <p>Total Price: $<span id="totalPrice">349</span></p>
+          </div>
+        </div>
+      </div>
+      <a href="paymenpage.html"
+        ><button id="checkoutBtn">Proceed to Checkout</button></a
+      >
     </section>
-
     <footer>
       <div class="footer-container">
         <a class="footer-fix" href="#"><h3>About</h3></a>
@@ -43,5 +58,6 @@
         <img class="footer-icon" src="imgs/facebook.png" alt="" />
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

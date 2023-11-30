@@ -22,7 +22,28 @@
     </header>
 
     <section>
-      <div class="product-container"></div>
+      <div class="product-container">
+        <h1 class="collection-title">Enter Your Adress Info Here -></h1>
+        <div class="contact-form">
+          <form
+            name="submit-to-google-sheet2"
+            onsubmit="return redirectToPage()"
+          >
+            <input type="Street" name="Street" placeholder="Street Name" />
+            <input type="Zipcode" name="Zipcode" placeholder="Zipcode" />
+            <input type="City" name="City" placeholder="City" />
+            <input type="Telephone" name="Telephone" placeholder="Telephone" />
+            <br />
+            <button
+              type="button"
+              class="btn3"
+              onclick="window.location.href='loadingscreen.html'"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -43,5 +64,6 @@
         <img class="footer-icon" src="imgs/facebook.png" alt="" />
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
