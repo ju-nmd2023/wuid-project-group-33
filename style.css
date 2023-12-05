@@ -54,6 +54,37 @@
 
   /* Styles */
 
+  @media screen and (max-width: 768px) {
+    header {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "logo logo cart"
+        "menu menu menu";
+      align-items: center;
+      justify-content: space-between;
+      height: auto;
+    }
+  
+    .logo-shirt {
+      grid-area: logo;
+      margin: 10px auto;
+    }
+  
+    .cart-style {
+      grid-area: cart;
+      text-align: right;
+      margin: 10px auto;
+    }
+  
+    .section-header {
+      grid-area: menu;
+      display: none;
+    }
+  
+  }
+
   .footer-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -479,6 +510,32 @@ form button:hover {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/* Collectionpage */
+
+.container-container-coll {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  margin-bottom: 150px;
+  margin-top: 50px;
+}
+
+.collection-title-coll {
+  text-align: center;
+}
+
+.product-container-coll {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.design-img-coll {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
 
   /* Fixes */
