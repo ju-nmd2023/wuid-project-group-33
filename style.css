@@ -28,12 +28,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
 }
 
 header {
   height: 150px;
-  width: 100%;
   background-color: white;
   padding: 20px;
   text-align: center;
@@ -50,7 +48,6 @@ footer {
   padding: 60px;
   text-align: left;
   border-top: 5px solid black;
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -366,6 +363,12 @@ a {
   align-items: center;
 }
 
+.cart-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .cart-items {
   width: 100%;
 }
@@ -400,8 +403,7 @@ a {
 .cart-shirt {
   width: 100px;
   height: auto;
-  float: left;
-  margin-right: 1000px;
+  margin-right: 500px;
 }
 
 /* Card form */
@@ -473,7 +475,12 @@ form button:hover {
 }
 
 #thanks {
-  margin-top: 200px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
 }
 
 .hidden {
@@ -488,4 +495,28 @@ form button:hover {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.container-container-coll {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  margin-bottom: 150px;
+  margin-top: 50px;
+}
+
+.collection-title-coll {
+  text-align: center;
+}
+
+.product-container-coll {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.design-img-coll {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
