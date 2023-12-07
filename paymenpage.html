@@ -22,29 +22,49 @@
     </header>
     <section>
       <div class="product-container">
-        <h1 class="collection-title">Enter Your Card Details Here -></h1>
         <div class="contact-form">
+          <h3>Card information</h3>
           <form
             name="submit-to-google-sheet"
             onsubmit="return redirectToPage()"
           >
-            <input type="name" name="Name" placeholder="Name On Card" />
-            <input type="nummber" name="nummber" placeholder="Cardnumber" />
             <input
+              class="input-box"
+              type="name"
+              name="Name"
+              placeholder="Name On Card"
+            />
+            <input
+              class="input-box"
+              type="nummber"
+              name="nummber"
+              placeholder="Cardnumber"
+            />
+            <input
+              class="input-box-short"
               type="Date of Expiration"
               name="Date of Expiration"
               placeholder="Date of Expiration"
             />
-            <input type="CCV" name="CCV" placeholder="CCV" />
+            <input
+              class="input-box-short"
+              type="CCV"
+              name="CCV"
+              placeholder="CCV"
+            />
             <br />
-            <button
-              type="button"
-              class="btn3"
-              onclick="window.location.href='adresspage.html'"
-            >
-              Submit
-            </button>
           </form>
+        </div>
+        <div class="contact-form-2">
+          <p class="total-text" style="margin-bottom: 5px">Your total:</p>
+          <p class="total-text" style="margin-top: 0px">349$</p>
+          <button
+            type="button"
+            class="btn3"
+            onclick="window.location.href='adresspage.html'"
+          >
+            <p class="btn3-text">Submit</p>
+          </button>
         </div>
       </div>
     </section>

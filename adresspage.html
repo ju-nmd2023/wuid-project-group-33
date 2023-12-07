@@ -29,17 +29,37 @@
             name="submit-to-google-sheet2"
             onsubmit="return redirectToPage()"
           >
-            <input type="Street" name="Street" placeholder="Street Name" />
-            <input type="Zipcode" name="Zipcode" placeholder="Zipcode" />
-            <input type="City" name="City" placeholder="City" />
-            <input type="Telephone" name="Telephone" placeholder="Telephone" />
+            <input
+              class="input-box"
+              type="Street"
+              name="Street"
+              placeholder="Street Name"
+            />
+            <input
+              class="input-box"
+              type="Zipcode"
+              name="Zipcode"
+              placeholder="Zipcode"
+            />
+            <input
+              class="input-box"
+              type="City"
+              name="City"
+              placeholder="City"
+            />
+            <input
+              class="input-box"
+              type="Telephone"
+              name="Telephone"
+              placeholder="Telephone"
+            />
             <br />
             <button
               type="button"
               class="btn3"
               onclick="window.location.href='loadingscreen.html'"
             >
-              Submit
+              <p class="btn3-text" style="margin-top: 0px">Submit</p>
             </button>
           </form>
         </div>

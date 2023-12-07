@@ -139,6 +139,12 @@ footer {
   font-size: 24px;
 }
 
+@media screen and (max-width: 940px) {
+  .collection-title {
+    margin-top: 0px;
+  }
+}
+
 /* Elements */
 
 h1 {
@@ -404,14 +410,57 @@ a {
   margin-right: 1000px;
 }
 
-/* Card form */
+/* Card form
+*/
 
 .contact-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 45vh;
+  margin-right: 30px;
+  max-width: 400px;
+}
+
+.input-box {
+  color: #272727;
+  background-color: #ccc;
+  border-radius: 2px;
+}
+
+.input-box-short {
+  color: #272727;
+  background-color: #ccc;
+  max-width: 200px;
+  border-radius: 2px;
+}
+
+.total-text {
+  font-family: roboto-light;
+  font-size: 24px;
+}
+
+.btn3 {
+  background-color: black;
+  color: #272727;
+  height: 60px;
+  width: 270px;
+  border-radius: 3px;
+  border: none;
+}
+
+.btn3-text {
+  font-family: roboto-regular;
+  color: white;
+  font-size: 36px;
+  margin-top: 7px;
+}
+
+.contact-form-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .contact-left,
