@@ -47,32 +47,43 @@ header {
 footer {
   height: 150px;
   background-color: white;
-  padding: 20px;
+  padding: 60px;
   text-align: left;
   border-top: 5px solid black;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
 }
 
 /* Styles */
 
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 300px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .footer-container a {
   text-decoration: none;
   color: black;
   margin-bottom: 10px;
+  gap: 20px;
 }
 
 .footer-icon-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   align-items: center;
   justify-content: space-around;
+  gap: 20px;
+}
+
+.footer-fix {
+  margin: 10px;
+  max-width: 50px;
 }
 
 .design-img {
@@ -172,9 +183,13 @@ a {
   float: right;
   width: 60px;
   height: auto;
-  margin-right: 50px;
-  margin-bottom: 100px;
-  margin-top: -85px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.footer-responsive {
+  margin-right: 20%;
 }
 
 .cart-style {
@@ -265,6 +280,12 @@ a {
   .product-container,
   .product-container-2 {
     width: 90%;
+  }
+}
+
+@media screen and(max-width: 550px) {
+  .footer-responsive {
+    width: 5%;
   }
 }
 
