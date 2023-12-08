@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Get the form element
+    
     var form = document.forms["submit-to-google-sheet"];
 
     
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.addEventListener("DOMContentLoaded", function () {
-    // Get the form element
+    
     var form = document.forms["submit-to-google-sheet2"];
 
     
@@ -31,9 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
     return false; 
   }
 
-  document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-      document.getElementById("loading").classList.add("hidden");
-      document.getElementById("thanks").classList.remove("hidden");
+  document.addEventListener("DOMContentLoaded", function () {
+    var h2Element = document.querySelector("#thanks h2");
+    var loadingContainer = document.getElementById("loading");
+    var thanksContainer = document.getElementById("thanks");
+
+    h2Element.style.display = "none";
+
+    setTimeout(function () {
+      loadingContainer.style.display = "none";
+      h2Element.style.display = "block";
+      h2Element.innerHTML = "Thanks for your order!";
     }, 5000);
-  });
+   })
