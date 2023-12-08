@@ -140,6 +140,12 @@ footer {
   .collection-title {
     margin-top: 0px;
   }
+
+  .cart-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 /* Elements */
@@ -300,6 +306,11 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+
+  .cart-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 730px) {
@@ -338,7 +349,26 @@ a {
   margin-bottom: 10px;
 }
 
-.color-circle {
+.color-circle-1 {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 2px solid rgb(0, 89, 255);
+}
+
+.color-circle-2 {
+  background-color: grey;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 2px solid #000;
+}
+
+.color-circle-3 {
+  background-color: white;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -360,6 +390,7 @@ a {
 
 .shopping-cart {
   background-color: white;
+  font-family: roboto-regular;
   width: 80%;
   margin: auto;
   padding: 20px;
@@ -370,13 +401,40 @@ a {
 }
 
 .cart-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pricing-container {
+  margin-top: 50px;
+}
+
+.cart-pricing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.options {
+  font-family: roboto-bold;
+}
+
+.options-button {
+  background-color: #ccc;
+  border-radius: 2px;
+  max-width: 70px;
+  padding: 2px;
+  padding-left: 4px;
 }
 
 .cart-items {
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
 }
 
 .cart-item {
@@ -397,19 +455,10 @@ a {
   text-align: center;
 }
 
-#checkoutBtn {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
 .cart-shirt {
-  width: 100px;
+  width: 200px;
   height: auto;
-  margin-right: 500px;
+  margin-right: 5px;
 }
 
 /* Card form
@@ -568,4 +617,12 @@ form button:hover {
   width: 100%;
   height: auto;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 940px) {
+  .cart-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }

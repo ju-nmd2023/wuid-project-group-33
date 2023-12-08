@@ -21,25 +21,71 @@
       /></a>
     </header>
     <section class="shopping-cart">
-      <div class="cart-items" id="cartItemsContainer"></div>
-      <div class="cart-summary">
-        <h3>Your Cart Summary</h3>
-        <div class="cart-content">
-          <div>
+      <div class="cart-content">
+        <div>
+          <h2 style="font-size: 42px">Your cart</h2>
+          <div class="cart-items">
             <img
               class="cart-shirt"
               src="designs/gulag.webp"
               alt="Gulag t-shirt"
             />
-            <p>Total Items: <span id="totalItems">1</span></p>
-            <p>Total Price: $<span id="totalPrice">349</span></p>
+            <div class="options">
+              <p>$ 349</p>
+              <p class="options-button">Size: M</p>
+              <div class="color-circles">
+                <div class="color-circle-1"></div>
+                <div class="color-circle-2"></div>
+                <div class="color-circle-3"></div>
+              </div>
+              <p class="options-button">Quantity: 1</p>
+            </div>
           </div>
         </div>
+        <div>
+          <a href="index.html"
+            ><u><h3>Continue shopping</h3></u></a
+          >
+          <div class="pricing-container">
+            <div class="cart-pricing">
+              <p>+ Delivery</p>
+              <p>$ 9.90</p>
+            </div>
+            <div class="cart-pricing">
+              <h3>Total</h3>
+              <h3>$ 358.00</h3>
+            </div>
+          </div>
+
+          <a href="paymenpage.html"
+            ><button id="checkoutBtn" class="btn3">
+              <p class="btn3-text">Check-out</p>
+            </button></a
+          >
+        </div>
       </div>
-      <a href="paymenpage.html"
-        ><button id="checkoutBtn">Proceed to Checkout</button></a
-      >
     </section>
+
+    <section>
+      <div class="container-container" style="margin-top: 100px">
+        <h2 class="collection-title">Parody Collection</h2>
+        <div class="product-container">
+          <a href="product-page.html">
+            <img class="design-img" src="designs/gulag.webp" alt="" />
+          </a>
+          <a href="">
+            <img class="design-img" src="designs/player.webp" alt="" />
+          </a>
+          <a href="">
+            <img class="design-img" src="designs/titanic.webp" alt="" />
+          </a>
+          <a href="">
+            <img class="design-img" src="designs/cholo.webp" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div class="footer-container">
         <a class="footer-fix" href="#"><h3>About</h3></a>
